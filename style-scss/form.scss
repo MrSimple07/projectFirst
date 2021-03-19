@@ -1,0 +1,24 @@
+.date{
+    text-align: center;
+    width: 310.75px;
+    height: 69.44px;
+    cursor: pointer;
+    padding: 10px 50px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid black;
+    margin: 30px;
+    background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+@media screen and (max-width:776px){
+    .date{
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,213 @@
+.result{
+    text-align: center;
+
+    &__title{
+        position: relative;
+        margin-top: 50px;
+    }
+
+    &__title-img{
+        width: 480px;
+        position: relative;
+    }
+
+    &__title-text{
+        position: absolute;
+        left: 0;
+        font-size: 25px;
+        text-align: center;
+        color: #202024;
+        left: 35%;
+        padding: 5px;
+    }
+
+    &__middle-text{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 35px; 
+        text-align: center;
+        color: #FFFFFF;
+        margin: 50px;
+
+        &_yellow{
+            color: #F6C866;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 35px;
+            text-align: center;
+            & p{
+                border: 1px solid white;
+                border-radius: 3px;
+                width: 442px;
+                height: 300px;
+                padding: 42px;
+            }
+        }
+
+    }
+
+    &__footer-text{
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 3px; 
+        text-transform: uppercase;
+        color: #9D9D9D;
+    }
+
+    &__btn{
+        overflow: hidden;
+        outline: none;
+        cursor: pointer;
+        margin-bottom: 35px;
+        margin-top: 20px;
+        border: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        width: 310.75px;
+        height: 69.44px;
+        background: linear-gradient(90deg, rgba(76, 217, 100, 0.9) -6.2%, rgba(50, 185, 73, 0.9) 100%);
+        border-radius: 50px;
+        transition: all 1s ease-in;
+
+        &:hover{
+            background: white;
+            color: black;
+        }
+    }
+}
+
+@media screen and (max-width: 997px){
+    .result{
+        &__title-img{
+            width: 450px;
+            position: relative;
+        }
+
+        &__title-text{
+            left: 25%;
+            font-size: 24px;
+        }
+    }    
+}
+@media screen and (max-width: 776px){
+    .result{
+        &__title-img{
+            width: 420px;
+            position: relative;
+        }
+
+        &__title-text{
+            left: 20%;
+             top: -2%;
+            font-size: 22px;
+        }
+    }    
+}
+@media screen and (max-width: 580px){
+    .result{
+     
+
+        &__title-text{
+            left: 10%;
+            top: -2%;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        &__middle-text{
+            font-size: 20px;
+
+            &_yellow{
+                font-size: 20 px;
+            }
+        }
+
+        &__btn{
+            width: 250px;
+            height: 60px;
+        }
+
+        &_footer-text{
+            font-size: 11px;
+        }
+    }    
+}
+@media screen and (max-width: 480px){
+    .result{
+        
+        &__title-img{
+            width: 390px;
+        }
+        &__title-text{
+            left: 13%;
+            top: 12%;
+            line-height: normal;
+            font-weight: 700;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        &__middle-text{
+            font-size: 15px;
+
+            &_yellow{
+                font-size: 22px;
+            }
+
+            &_yellow p{
+                width: 401px;
+                height: 288px;
+            }
+        }
+
+        &__btn{
+            width: 250px;
+            height: 60px;
+        }
+
+        &_footer-text{
+            font-size: 11px;
+        }
+    }    
+}
+@media screen and (max-width: 400px){
+    .result{
+
+        &__title-img{
+            width: 259px;
+        }
+        &__title-text{
+            left: 6%;
+            top: 0;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        &__middle-text{
+            font-size: 12px;
+
+            &_yellow{
+                font-size: 14px;
+
+                & p{
+                    width: 299px;
+                    height: 240px;
+                    padding: 28px;
+                }
+            }
+        }
+
+        &__btn{
+            width: 230px;
+            height: 50px;
+            font-size: 12px;
+        }
+    }    
+
+    .result__footer-text{
+        font-size: 7px;
+    }
+}
